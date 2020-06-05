@@ -2,18 +2,44 @@
   "name": "rblsio-frontend-common",
   "version": "1.0.1",
   "description": "A collection of common frontend dependencies used by Rebels",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"No test specified\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "np": "^6.2.3",
-    "react": "^16.13.1"
+    "react": "^16",
+    "typescript": "^3.9.5"
   },
   "devDependencies": {
-    "@types/react": "^16.9.35"
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@types/jest": "^24.0.24",
+    "@types/react": "^16.9.35",
+    "jest": "^24.9.0",
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "standard": "^14.3.1",
+    "standard-prettier": "^1.0.1",
+    "ts-jest": "^24.2.0"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      "build/"
+    ]
+  },
+  "peerDependencies": {
+    "react-dom": "^16"
   }
 }
