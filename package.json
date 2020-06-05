@@ -1,6 +1,6 @@
 {
   "name": "rblsio-frontend-common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of common frontend dependencies used by Rebels",
   "main": "build/index.js",
   "module": "build/index.es.js",
