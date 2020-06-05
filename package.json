@@ -1,0 +1,20 @@
+{
+  "name": "rblsio-frontend-common",
+  "version": "1.0.0",
+  "description": "A collection of common frontend dependencies used by Rebels",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "np": "^6.2.3",
+    "rblsio-frontend-common": "^1.0.0",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35"
+  }
+}
